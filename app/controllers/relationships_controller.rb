@@ -12,7 +12,7 @@ class RelationshipsController < ApplicationController
       flash[:success] = "You're now following #{followed_user_name}"
       redirect_to "/users/#{params[:followee_id]}"
     else
-      flash[:error] = "Something went wrong."
+      flash[:error] = "Something went wrong. Please see admin"
     end
   end
 end
